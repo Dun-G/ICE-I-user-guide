@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ICE-I Student User Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/highlight/default.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="loader-container">
+      <img src="img/logo2.png" alt="Image" id="loader-image" />
+    </div>
+
+    <!-- Sidebar Start -->
+    <button
+      class="btn btn-lg btn-primary btn-offcanvas"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasSidebar"
+      aria-controls="offcanvasSidebar"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasSidebar"
+      aria-labelledby="offcanvasSidebarLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <img
+          src="img/logo.png"
+          alt="Sidebar Logo"
+          class="sidebar-image img-fluid"
+        />
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="flex-shrink-0 bg-white">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-1"
+              >
+                Registration and Account Management
+              </button>
+              <div class="collapse" id="collapse-1">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-1-1" class="text-body rounded"
+                      >How to register</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-2" class="text-body rounded"
+                      >Entering the Portal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-3" class="text-body rounded"
+                      >Exploring Account Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-4" class="text-body rounded"
+                      >Logging Out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-2"
+                aria-expanded="false"
+              >
+                Profile and Notifications
+              </button>
+              <div class="collapse" id="collapse-2">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-2-1" class="text-body rounded"
+                      >Showing the Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-2-2" class="text-body rounded"
+                      >Essence of notifications</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-3"
+                aria-expanded="false"
+              >
+                Academic Exploration
+              </button>
+              <div class="collapse" id="collapse-3">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-3-1" class="text-body rounded"
+                      >Apply to be a lecturer</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-2" class="text-body rounded"
+                      >Exploring Student's Homepage</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-3" class="text-body rounded"
+                      >Exploring Universities/Institutions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-4" class="text-body rounded"
+                      >View All Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-5" class="text-body rounded"
+                      >Navigating My Courses Dashboard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-4"
+                aria-expanded="false"
+              >
+                Course Management
+              </button>
+              <div class="collapse" id="collapse-4">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-4-1" class="text-body rounded"
+                      >Adding a course to cart and payment</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-2" class="text-body rounded"
+                      >Reflect the purchase history</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-3" class="text-body rounded"
+                      >Showing each subsection and taking a quiz</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-4" class="text-body rounded"
+                      >Completing the course</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-5"
+                aria-expanded="false"
+              >
+                Certificates and Ratings
+              </button>
+              <div class="collapse" id="collapse-5">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-5-1" class="text-body rounded"
+                      >Ways on claiming a certificate – 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-5-2" class="text-body rounded"
+                      >Ways on claiming a certificate – 2</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-5-3" class="text-body rounded"
+                      >Viewing and Verifying Certificates</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-5-4" class="text-body rounded"
+                      >How to give ratings and feedback</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-6"
+                aria-expanded="false"
+              >
+                Promotions and Support
+              </button>
+              <div class="collapse" id="collapse-6">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-6-1" class="text-body rounded"
+                      >How to stay updated on upcoming promos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-6-2" class="text-body rounded"
+                      >For other concerns, show the Contact Us form</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-7"
+                aria-expanded="false"
+              >
+                Others
+              </button>
+              <div class="collapse" id="collapse-7">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-7-1" class="text-body rounded"
+                      >About Us Section</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top text-center mt-auto p-3">
+        <a href="../../guide.html" class="btn-2 btn btn-primary btn-sm"
+          >Go Back to Guide List</a
+        >
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Banner Start -->
+    <div
+      class="container-fluid bg-custom py-5 mb-5 border-bottom border-danger border-1 shadow"
+    >
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <img
+            src="img/logo.png"
+            alt="ICEI Logo"
+            class="icon-image img-fluid"
+          />
+          <h1 class="fw-bold text-danger mb-3 my-4">Learner User Guide</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <div class="container py-5">
+      <h1 class="fw-bolder display-6">Welcome to the User Guide!</h1>
+      <p style="text-align: justify">
+        Welcome to our student user guide! This comprehensive resource has been
+        crafted to assist you in navigating our website with ease and
+        efficiency. From course information to accessing resources, we are
+        committed to providing you with step-by-step instructions and invaluable
+        tips.
+      </p>
+
+      <!-- Section 1 Start -->
+      <h1 class="fw-bold display-7 mt-5">
+        Registration and Account Management
+      </h1>
+      <h3 id="section-1-1" class="fw-bold mt-2">How to register</h3>
+      <p class="mt-2" style="text-align: justify">
+        In this video, we'll walk you through the simple steps to register as a
+        student user. First, locate and click on the "Registration" button on
+        the website's homepage. Next, you'll be directed to the registration
+        form and fill in the needed requirements. Once you've filled out all the
+        required fields, click on the "Create Account" button. An email
+        verification will be sent to your provided email address. Please check
+        your inbox and follow the instructions to verify your email.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/1. Registration.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Learn the simple steps to register and create your account.
+      </p>
+
+      <h3 id="section-1-2" class="fw-bold mt-5">Entering the portal</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access your account, begin by navigating to the homepage of our
+        website. Once there, locate and click on the "Login" button. You'll then
+        be prompted to enter your email address and the password you created
+        during the registration process. After that, click on the login button
+        to grant you access to your personalized account, where you can explore
+        all the features and resources available to you.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/2. Entering the Portal.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Access our platform and begin your educational journey.
+      </p>
+
+      <h3 id="section-1-3" class="fw-bold mt-5">Exploring Account Settings</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access your profile, simply click on the dropdown arrow next to your
+        username, and select "Profile". Here, you'll find all your essential
+        information neatly organized. This includes your personal details, an
+        "About Me" section, and any certificates you've earned.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/19. Exploring Account Settings.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Customize your experience by adjusting account settings.
+      </p>
+
+      <h3 id="section-1-4" class="fw-bold mt-5">Logging Out</h3>
+      <p class="mt-2" style="text-align: justify">
+        To log out of the account, navigate to the top right corner of the
+        homepage. Click on the dropdown arrow to reveal options, where you'll
+        find "sign out". Click on it, and you'll be promptly logged out.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/22. Log out – student.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Safely logout when your session is complete.
+      </p>
+    </div>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 Start -->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Profile and Notifications</h1>
+
+      <h3 id="section-2-1" class="fw-bold mt-2">Showing the Profile</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access your profile, simply click on the dropdown arrow next to your
+        username, and select "Profile". Here, you'll find all your essential
+        information neatly organized. This includes your personal details, an
+        "About Me" section, and any certificates you've earned.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/3. Showing the Profile.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        View and manage your personal profile details.
+      </p>
+
+      <h3 id="section-2-2" class="fw-bold mt-5">Essence of Notifications</h3>
+      <p class="mt-2" style="text-align: justify">
+        To effortlessly manage your notifications, locate and click the
+        notification bell icon situated within the interface. Upon clicking, a
+        dropdown menu will promptly appear, presenting your notifications
+        organized into three categories: All, General, and Course notifications.
+        Should you wish to explore your notifications comprehensively, simply
+        opt for "View all notifications" to access a fullscreen display
+        showcasing all your notifications at once.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/11. Essence of notifications – student.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Stay informed with notifications tailored to your needs.
+      </p>
+    </div>
+    <!-- Section 2 End -->
+
+    <!-- Section 3 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Academic Exploration</h1>
+
+      <h3 id="section-3-1" class="fw-bold mt-2">Apply to be a lecturer</h3>
+      <p class="mt-2" style="text-align: justify">
+        To become a lectuer, simply locate and click on the 'Become a lecturer'
+        button in your User Profile page. Next, select the university where you
+        wish to lecture and proceed by clicking 'Submit.' Your request will then
+        be sent to the chosen university for verification. Once confirmed,
+        you'll be ready to embark on your journey as a lecturer.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/4. Apply to be a lecturer.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Apply for a lecturer position to share your expertise.
+      </p>
+
+      <h3 id="section-3-2" class="fw-bold mt-5">
+        Exploring Student's Homepage
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Upon logging in with your registration credentials, you'll be directed
+        to the homepage, where you'll find a menu bar at the top featuring the
+        ICE Institute logo, categories, universities or institutions,
+        certificates, notifications, news or info, shopping cart, and your user
+        profile name. The homepage is rich with various sections including home
+        page slides, university or institution slides, top categories showcasing
+        popular topics, flash sales offering courses at discounted rates for a
+        limited time, most popular courses indicating those with the highest
+        enrollment with an option to explore more to access the full course
+        catalogue, 100% free courses providing access to online resources
+        without charge with an option to explore more to browse available
+        courses, new courses featuring the latest offerings from partner
+        universities with an option to explore more to discover additional
+        options, and Explore ICE Institute highlighting available categories and
+        the number of courses.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/5. Exploring Student's Homepage.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Discover resources tailored to you on your homepage.
+      </p>
+
+      <h3 id="section-3-3" class="fw-bold mt-5">
+        Exploring Universities/Institutions
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Navigate through the partner universities/institutions by selecting the
+        designated tab in the menu header. Once clicked, you'll be directed to a
+        page showcasing a range of universities affiliated with ICE-I. Click on
+        any university to unveil detailed information alongside the available
+        courses listed below. Explore seamlessly through our network of
+        educational partners to find the ideal match for your academic pursuits.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/6. Exploring Universities-Institutions.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Find information about educational institutions.
+      </p>
+
+      <h3 id="section-3-4" class="fw-bold mt-5">View All Courses</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access and explore courses, begin by clicking on the search icon
+        located in the header. This action will direct you to a page showcasing
+        all available courses. From here, you have the option to refine your
+        search criteria according to your preferences. You can filter courses
+        based on categories, pricing, language, and type (instructor-paced or
+        self-paced), as well as by skill level (basic, intermediate, or
+        advanced). Additionally, you can arrange courses alphabetically or by
+        ratings by utilizing the sorting feature.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/7. View All Courses.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Browse our comprehensive catalog of courses.
+      </p>
+
+      <h3 id="section-3-5" class="fw-bold mt-5">
+        Navigating My Courses Dashboard
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To access your courses, simply utilize the dropdown menu adjacent to
+        your user profile and select "Dashboard" from the options provided.
+        Within the dashboard, several sections await your exploration. "My
+        Courses" will display your enrolled courses, offering a categorized view
+        including "All" for a comprehensive list, "In Progress" for ongoing
+        courses, "Completed" for finished ones, and "Archived" for those
+        completed within the last 30 days. Additionally, you'll find sections
+        such as "Related Courses" for additional listings, "Recommended Courses"
+        tailored to your interests, and "Announcements" delivering pertinent
+        updates and notifications. To streamline information, use the dropdown
+        menus labeled "From all" and "All time" for filtering announcements as
+        needed.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/12. Navigating My Courses Dashboard.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Easily manage your courses through your dashboard.
+      </p>
+    </div>
+    <!-- Section 3 End-->
+
+    <!-- Section 4 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Course Management</h1>
+
+      <h3 id="section-4-1" class="fw-bold mt-2">
+        Adding a course to cart and payment
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To enroll in a course and make a payment, begin by choosing the course
+        you wish to add. Once selected, you'll find detailed information about
+        the course, including an option labeled "Add to Cart." Click on this
+        button to include the course in your shopping cart. You'll then be
+        redirected to the shopping cart page, where you can review your
+        selections and any available promotions or discounts associated with the
+        course. If there are any discounts applicable, you can choose the one
+        that suits you best and proceed by clicking on "Pay Now" to complete the
+        enrollment process. In case you decide to remove a course from your
+        cart, simply mark the corresponding checkbox next to the course and
+        select delete. Should you wish to add more courses, you can easily do so
+        by clicking on the "Explore Courses" button to continue browsing and
+        adding to your cart.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/8. Adding a course to cart and payment.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Select courses, proceed to payment, and track purchases.
+      </p>
+
+      <h3 id="section-4-2" class="fw-bold mt-5">
+        Reflect the Purchase History
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To access your purchase history, click the cart icon and select
+        "Purchase History". This will reveal a table categorizing your purchases
+        into pending, successful, and cancelled/expired tabs based on payment
+        status. Successful purchases are listed under the success tab,
+        displaying details such as invoice, creation date, payment date, price,
+        payment status, and an option to view the receipt. Clicking "Receipt"
+        provides a comprehensive breakdown of the purchase, including any
+        applied promotions, directly on the web. To download the receipt, click
+        the download button for local storage.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/9. Reflect the purchase history.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">View your purchase history for reference.</p>
+
+      <h3 id="section-4-3" class="fw-bold mt-5">
+        Showing each subsection and taking a quiz
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To delve into the subsections of a course, initiate the process by
+        selecting the desired course and activating it with a click of the
+        "start course" button. This action initiates the journey with the course
+        description, providing context for what lies ahead. Moving forward
+        prompts the appearance of a multiple-choice pre-test, serving as a
+        checkpoint for initial comprehension. It's important to note that each
+        course is unique, with variations in section and subsection
+        organization, particularly in quiz pacing.
+      </p>
+      <p class="mt-1" style="text-align: justify">
+        Upon completing the pre-test, submit your responses and receive
+        immediate feedback in the form of a score displayed below the submit
+        button. This feedback mechanism allows you to gauge your understanding
+        and readiness for the upcoming sections. Advancing further reveals the
+        substantive content of the course, comprising various learning materials
+        such as slides, lecturer-provided videos, or curated content from
+        platforms like YouTube. Engaging with these resources sets the stage for
+        deeper learning and comprehension.
+      </p>
+      <p class="mt-1" style="text-align: justify">
+        Having navigated through the preceding materials, you're then presented
+        with a final quiz specific to that section. This quiz serves as an
+        assessment of your comprehension and retention of the course content.
+        Once again, upon completion, submit your answers to receive feedback and
+        gauge your mastery of the section's objectives.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/13. Showing each subsection and taking a quiz.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Engage with course material through interactive quizzes.
+      </p>
+
+      <h3 id="section-4-4" class="fw-bold mt-5">Completing the course</h3>
+      <p class="mt-2" style="text-align: justify">
+        To determine your course completion status, select a course from your
+        dashboard and navigate to the progress tab. Here, you'll find crucial
+        information regarding your performance. This includes the course
+        completion indicator, reflecting your progress through the content.
+        You'll also see your grades, comparing your weighted grade to the
+        required pass grade. Additionally, there's a grade summary, presenting
+        scores for various assessment types, and detailed grades for each course
+        section. Upon completing the course, you can claim your certificate by
+        clicking "Claim Certificate" on the right-hand side, which directs you
+        to the certificate claiming page.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/14. Completing the course (showing if pass or fail and where to check it).mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Receive confirmation upon course completion.
+      </p>
+    </div>
+    <!-- Section 4 End-->
+
+    <!-- Section 5 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Certificates and Ratings</h1>
+
+      <h3 id="section-5-1" class="fw-bold mt-2">
+        Ways on claiming a certificate – 1
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        In order to claim your certificate, navigate to the certificate section
+        located after the unit content within the course. A Google slide
+        presentation will provide instructions on the necessary steps before
+        obtaining and downloading the certificate. Directly below the Google
+        slide, you'll find a "Generate Certificate" button. Clicking this button
+        will prompt the system to generate your certificate for the current
+        course. The certificate will include your name, the course title, the
+        institution offering the course, your course grade, and a QR code for
+        certificate validation.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/15. Ways on claiming a certificate – 1.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Learn how to claim your certificate.</p>
+
+      <h3 id="section-5-2" class="fw-bold mt-5">
+        Ways on claiming a certificate – 2
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        In this segment, we'll explore an alternative method to obtain your
+        certificate. Within your "My Courses" dashboard, upon completion of a
+        course, you'll notice a prominent "View Certificate" button. Simply
+        click on it, and your certificate for that specific course will be
+        promptly generated and presented to you. This streamlined process
+        ensures easy access to your certificates directly from your course
+        dashboard.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/16. Ways on claiming a certificate – 2.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Explore additional methods for certificate retrieval.
+      </p>
+
+      <h3 id="section-5-3" class="fw-bold mt-5">
+        Viewing and Verifying Certificates
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To effortlessly access and verify your certificates, begin by clicking
+        on the "Certificates" tab located in the menu header. This action will
+        seamlessly transfer you to the Accredible Certificate Verification page,
+        designed for your convenience. On this page, you'll encounter various
+        options to ensure the authenticity of your certificates. You can choose
+        from three verification methods: Credential Link, Credential ID, or Open
+        Badge. To proceed, simply input the reference details provided to you
+        via email. This streamlined process ensures accurate and hassle-free
+        certificate verification.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/17. Viewing and Verifying Certificates.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">View and verify your earned certificates.</p>
+
+      <h3 id="section-5-4" class="fw-bold mt-5">
+        How to give ratings and feedback
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To access ratings and feedback for completed courses, head to the my
+        courses dashboard and select the completed tab. Look for the "View
+        rating & feedback" button next to the desired course and click it. This
+        will lead you to the course information page. Below, you'll find a
+        section dedicated to leaving feedback. Simply type your comments into
+        the provided text box on the right-hand side and select a star rating.
+        Once you've completed your feedback, hit submit to post it.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/18. How to give ratings and feedback.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Provide feedback and ratings for courses.</p>
+    </div>
+    <!-- Section 5 End-->
+
+    <!-- Section 6 Start -->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Promotions and Support</h1>
+
+      <h3 id="section-6-1" class="fw-bold mt-2">
+        Be updated on upcoming promos
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        For those seeking to stay informed about the latest promotions, navigate
+        to the News/Info section located in the menu header. Upon selection, a
+        variety of news and information will populate the screen. To
+        specifically access promotions, utilize the dropdown menu and choose the
+        "promo" option. Currently, there are no promotions available, but
+        regularly checking this section will ensure you never miss out on an
+        opportunity.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/10. How to stay updated on upcoming promos.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Stay informed about promotions and upcoming events.
+      </p>
+
+      <h3 id="section-6-2" class="fw-bold mt-5">Show Contact Us Form</h3>
+      <p class="mt-2" style="text-align: justify">
+        To address any inquiries or issues regarding the website or personal
+        matters, users can find the "Contact Us" menu located at the bottom of
+        the page. Upon selecting it, they will be directed to a form requiring
+        essential information such as their name, email, phone number, address,
+        and the nature of their message, whether pertaining to the website or
+        personal matters. Upon completion, users will need to solve a captcha
+        before clicking "send message" to submit their queries or concerns to
+        the admin.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/20. For other concerns, show the Contact Us form.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Reach out to us with any questions or concerns.
+      </p>
+    </div>
+    <!-- Section 6 End -->
+
+    <!-- Section 7 Start -->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Others</h1>
+
+      <h3 id="section-7-1" class="fw-bold mt-2">About Us Section</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access the About Us section, scroll down until you locate "About ICE
+        Institute" and click on it. Here, you'll find comprehensive information
+        including news, mission, and vision about the ICE Institute.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Student Guide/vids/21. About Us Section.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Learn more about our organization and mission.
+      </p>
+    </div>
+    <!-- Section 7 End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/highlight/highlight.min.js"></script>
+
+    <!--Main Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

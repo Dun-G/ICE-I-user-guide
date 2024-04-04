@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ICE-I Lecturer User Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/highlight/default.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="loader-container">
+      <img src="img/logo2.png" alt="Image" id="loader-image" />
+    </div>
+
+    <!-- Sidebar Start -->
+    <button
+      class="btn btn-lg btn-primary btn-offcanvas"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasSidebar"
+      aria-controls="offcanvasSidebar"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasSidebar"
+      aria-labelledby="offcanvasSidebarLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <img
+          src="img/logo.png"
+          alt="Sidebar Logo"
+          class="sidebar-image img-fluid"
+        />
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="flex-shrink-0 bg-white">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-1"
+              >
+                Application Process and Account Overview
+              </button>
+              <div class="collapse" id="collapse-1">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-1-1" class="text-body rounded"
+                      >Apply to be a lecturer</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-2" class="text-body rounded"
+                      >Exploring the Lecturer Dashboard and Signing out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-2"
+                aria-expanded="false"
+              >
+                Entering the Platform
+              </button>
+              <div class="collapse" id="collapse-2">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-2-1" class="text-body rounded"
+                      >Entering as a lecturer</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-2-2" class="text-body rounded"
+                      >Going to the dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-2-3" class="text-body rounded"
+                      >Looking at the profile</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-3"
+                aria-expanded="false"
+              >
+                Course Management
+              </button>
+              <div class="collapse" id="collapse-3">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-3-1" class="text-body rounded"
+                      >Showing courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-2" class="text-body rounded"
+                      >Receiving a request for course creation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-3" class="text-body rounded"
+                      >Creating course content</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-4" class="text-body rounded"
+                      >Requesting submission</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-5" class="text-body rounded"
+                      >Receiving feedback on the status of curation</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-4"
+                aria-expanded="false"
+              >
+                Interaction and Notification
+              </button>
+              <div class="collapse" id="collapse-4">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-4-1" class="text-body rounded"
+                      >Allowing notifications to populate results</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-2" class="text-body rounded"
+                      >Reviewing the list of learners and their profiles</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-5"
+                aria-expanded="false"
+              >
+                Course Details and Logs
+              </button>
+              <div class="collapse" id="collapse-5">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-5-1" class="text-body rounded"
+                      >Exploring course details</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-5-2" class="text-body rounded"
+                      >Reviewing activity logs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top text-center mt-auto p-3">
+        <a href="../../guide.html" class="btn-2 btn btn-primary btn-sm"
+          >Go Back to Guide List</a
+        >
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Banner Start -->
+    <div
+      class="container-fluid bg-custom py-5 mb-5 border-bottom border-danger border-1 shadow"
+    >
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <img
+            src="img/logo.png"
+            alt="ICEI Logo"
+            class="icon-image img-fluid"
+          />
+          <h1 class="fw-bold text-danger mb-3 my-4">Lecturer User Guide</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <div class="container py-5">
+      <h1 class="fw-bolder display-6">Welcome to the User Guide!</h1>
+      <p style="text-align: justify">
+        Welcome to our lecturer guide! This comprehensive resource has been
+        designed to support you in effectively utilizing our platform for
+        instructional purposes. Whether you're seeking guidance on course
+        management or accessing course materials, our goal is to equip you with
+        clear, step-by-step instructions and valuable insights to enhance your
+        experience as a lecturer.
+      </p>
+
+      <!-- Section 1 Start -->
+      <h1 class="fw-bold display-7 mt-5">
+        Application Process and Account Overview
+      </h1>
+      <h3 id="section-1-1" class="fw-bold mt-2">Apply to be a lecturer</h3>
+      <p class="mt-2" style="text-align: justify">
+        To become a lectuer, simply locate and click on the 'Become a lecturer'
+        button in your User Profile page. Next, select the university where you
+        wish to lecture and proceed by clicking 'Submit.' Your request will then
+        be sent to the chosen university for verification. Once confirmed,
+        you'll be ready to embark on your journey as a lecturer.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/1. Apply to be a lecturer.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">How to Apply as a Lecturer.</p>
+
+      <h3 id="section-1-2" class="fw-bold mt-5">
+        Exploring the Lecturer Dashboard and Signing out
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To access the lecturer dashboard, locate the home button in the sidebar.
+        Here, you'll find essential data including the total number of learners
+        across all courses, the total number of courses, published courses,
+        courses in submission, courses in draft, and a graphical representation
+        of online users per course.
+      </p>
+      <p class="mt-2" style="text-align: justify">
+        To sign out of your account, simply navigate to the three-dot dropdown
+        menu and select the logout option.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/14. Exploring the Lecturer Dashboard and Signing Out.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Navigating Through the Lecturer Dashboard and Signing Out of the
+        Platform.
+      </p>
+    </div>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 Start -->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Entering the Platform</h1>
+
+      <h3 id="section-2-1" class="fw-bold mt-2">Entering as a lecturer</h3>
+      <p class="mt-2" style="text-align: justify">
+        To enter as a lecturer, simply navigate to the homepage and locate the
+        login button. Once there, input your registered username and password.
+        Then, click on the login button to access the features tailored for
+        lecturers.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/2. Entering as a lecturer.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Entering the Platform as a Lecturer.</p>
+
+      <h3 id="section-2-2" class="fw-bold mt-5">Going to the dashboard</h3>
+      <p class="mt-2" style="text-align: justify">
+        Upon logging in, you can see essential information directly. Here, you
+        can conveniently monitor key metrics such as the total number of
+        learners across all courses, the quantity of courses available, those
+        published, in submission, and in draft. Additionally, the course chart
+        is prominently displayed on the homepage, offering a visual
+        representation of course-related data.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/3. Going to dashboard.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Navigating to the Dashboard.</p>
+
+      <h3 id="section-2-3" class="fw-bold mt-5">Looking at the profile</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access your lecturer profile, navigate to the top right corner of the
+        dashboard and click on username and select "Profile." Your profile
+        details will then be visible, including a table listing the courses
+        you're teaching along with pertinent information about each course.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/4. looking at the profile.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Viewing and Editing Your Profile.</p>
+    </div>
+    <!-- Section 2 End -->
+
+    <!-- Section 3 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Course Management</h1>
+
+      <h3 id="section-3-1" class="fw-bold mt-2">Showing courses</h3>
+      <p class="mt-2" style="text-align: justify">
+        To access lecturer courses, navigate to the "My Courses" section located
+        in the left sidebar. Upon clicking, you'll be directed to the My Courses
+        page. Utilize the Find courses search bar to refine your search. The
+        lecturer's assigned courses are organized into tabs: Published, Draft,
+        In Submission, and Archived. Courses are displayed as tiles, each
+        containing the course title, pace type (Self or Instructor), rating, and
+        a View Live button for further details. Additional information includes
+        the course code, participant count, and start date.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/5. Showing his courses.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Showcasing Your Courses.</p>
+
+      <h3 id="section-3-2" class="fw-bold mt-5">
+        Receiving a request for course creation
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Upon acceptance and creation, newly formed courses are seamlessly
+        delivered to the lecturer, appearing promptly within the draft section
+        of the 'My Courses' tab. This feature ensures quick access and
+        organization, streamlining the course development process efficiently.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/6. Receiving a request for course creation.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Handling Course Creation Requests.</p>
+
+      <h3 id="section-3-3" class="fw-bold mt-5">Creating course content</h3>
+      <p class="mt-2" style="text-align: justify">
+        To manage and edit your course, navigate to the "My Courses" tab and
+        select the desired course from the drafts section. Within this section,
+        you'll have access to various aspects of your course, including the
+        "About Page" where you can configure the course Schedule & Details. This
+        involves setting up Basic Information, choosing the course pacing,
+        establishing the Course Schedule, and specifying the Course Language to
+        aid users in finding courses taught in specific languages. Next,
+        introduce your course with a Course Short Description, a Course
+        Overview, and manage the Course Card Image and upload a Course
+        Introduction Video using a YouTube video's ID. Finally, set expectations
+        with the Requirements section, indicating the Hours of Effort per Week
+        expected from students for course work completion. By following these
+        steps, you can efficiently create and manage your course content,
+        ensuring clarity and coherence for your learners.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/7. creating a course content.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Creating Course Content.</p>
+
+      <h3 id="section-3-4" class="fw-bold mt-5">Requesting submission</h3>
+      <p class="mt-2" style="text-align: justify">
+        To begin creating course content, navigate to the Content drop-down menu
+        and select Outline. Here, instructors can add Sections, Subsections, and
+        Units, each containing Components like Discussions, HTML elements,
+        Problems, or Videos. Once the content is prepared, click "Submit For
+        Curation" to request approval from administrators before publishing the
+        course. Patience is advised while awaiting approval.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/8. requesting for submission.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Requesting Course Submission.</p>
+
+      <h3 id="section-3-5" class="fw-bold mt-5">
+        Receiving feedback on the status of curation
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Once the curated course content gains approval from the mitra, the
+        lecturer will promptly receive a notification. This notification will be
+        accessible via the notification bell icon button. To ensure you're up to
+        date, simply refresh the page to view the notification promptly.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/9. receiving feedback on status of curation.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Receiving Feedback on Course Curation.</p>
+    </div>
+    <!-- Section 3 End-->
+
+    <!-- Section 4 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Interaction and Notification</h1>
+
+      <h3 id="section-4-1" class="fw-bold mt-2">
+        Allowing notifications to populate results
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Upon acceptance of curated course content by the ICEI Admin, lecturers
+        will receive a notification through the bell icon. This indicates that
+        the submitted course is now published and available for student access.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/10. allowing notification to populate on results.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Enabling Notifications and Interacting with Results.
+      </p>
+
+      <h3 id="section-4-2" class="fw-bold mt-5">
+        Reviewing the list of learners and their profiles
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To access and review the list of learners enrolled in a published
+        course, navigate to the top right corner of the page and select the
+        three-dot dropdown menu. From there, choose "Profile." Within the
+        profile section, you'll find a concise table displaying essential
+        details. This includes the course name, course code, institution,
+        learner count, course status, ratings, and feedback. This streamlined
+        layout offers a comprehensive overview of course engagement and
+        performance metrics.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/11. reviewing list of learners and looking at the details or profile.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Reviewing Learner Profiles.</p>
+    </div>
+    <!-- Section 4 End-->
+
+    <!-- Section 5 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Course Details and Logs</h1>
+
+      <h3 id="section-5-1" class="fw-bold mt-2">Exploring course details</h3>
+      <p class="mt-2" style="text-align: justify">
+        To delve into the specifics of a course, navigate to the "My Courses"
+        tab located in the sidebar menu. Select the desired course and click on
+        the "View Details" button. Within this section, you'll find
+        comprehensive information regarding the course, including learner data
+        such as total learners, completion status, claimed certificates, current
+        progress, and any failed attempts.
+      </p>
+      <p class="mt-2" style="text-align: justify">
+        Feedback on learner performance is readily available, showcasing access
+        times and engagement metrics. A detailed table outlines each learner's
+        activity, encompassing their name, affiliated institution, problems
+        attempted and solved, as well as interactions with videos, files,
+        quizzes, midterms, and finals.
+      </p>
+      <p class="mt-2" style="text-align: justify">
+        Visual representations of activity logs and learner demographics are
+        provided. Graphs and charts offer insights into learners' engagement
+        levels and distribution based on gender, facilitating a deeper
+        understanding of course dynamics.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/12. Exploring Course Details.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Exploring Detailed Course Information.</p>
+
+      <h3 id="section-5-2" class="fw-bold mt-5">Reviewing activity logs</h3>
+      <p class="mt-2" style="text-align: justify">
+        Navigate through your course's activity logs effortlessly by accessing
+        "My Courses" in the sidebar menu and selecting the "View Details" button
+        next to your desired course. Locate the activity log button situated on
+        the top right corner of the page and click to unveil a convenient pop-up
+        window. Inside the activity log, you'll find a comprehensive table
+        containing essential details such as number, timestamp, actor, chapter,
+        section, component, event name, device, IP address, and country.
+      </p>
+      <p class="mt-2" style="text-align: justify">
+        Refine your search effortlessly by utilizing the dropdown filters at the
+        top. Adjust the time range to your preference, choose between various
+        actors including learners and lecturers, and specify actions such as
+        file uploads, course enrollments, or access. You can even narrow down
+        your search to individual learners by selecting their name from the
+        dropdown menu.
+      </p>
+      <p class="mt-2" style="text-align: justify">
+        For a deeper analysis, download the activity log table in your preferred
+        format - XLS or CSV. Simply click the respective buttons to initiate the
+        download and review the file at your convenience. Stay informed and in
+        control with our intuitive activity log feature.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Lecturer Guide/vids/13. review the activity logs.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Reviewing Activity Logs.</p>
+    </div>
+    <!-- Section 5 End-->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/highlight/highlight.min.js"></script>
+
+    <!--Main Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

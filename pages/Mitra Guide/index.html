@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ICE-I Mitra User Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/highlight/default.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="loader-container">
+      <img src="img/logo2.png" alt="Image" id="loader-image" />
+    </div>
+
+    <!-- Sidebar Start -->
+    <button
+      class="btn btn-lg btn-primary btn-offcanvas"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasSidebar"
+      aria-controls="offcanvasSidebar"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasSidebar"
+      aria-labelledby="offcanvasSidebarLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <img
+          src="img/logo.png"
+          alt="Sidebar Logo"
+          class="sidebar-image img-fluid"
+        />
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="flex-shrink-0 bg-white">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-1"
+              >
+                Registration as Mitra and Dashboard
+              </button>
+              <div class="collapse" id="collapse-1">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-1-1" class="text-body rounded"
+                      >Registration as Student</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-2" class="text-body rounded"
+                      >Email Confirmation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-3" class="text-body rounded"
+                      >Entering the Portal as Mitra</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-4" class="text-body rounded"
+                      >Going to the Dashboard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-2"
+                aria-expanded="false"
+              >
+                Learner Management
+              </button>
+              <div class="collapse" id="collapse-2">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-2-1" class="text-body rounded"
+                      >Showing the learners - 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-2-2" class="text-body rounded"
+                      >Showing the learners - 2</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-3"
+                aria-expanded="false"
+              >
+                Lecturer Management
+              </button>
+              <div class="collapse" id="collapse-3">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-3-1" class="text-body rounded"
+                      >Showing the lecturers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-2" class="text-body rounded"
+                      >Updating a lecturers details</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-3-3" class="text-body rounded"
+                      >Active or Inactive Lecturer update</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-4"
+                aria-expanded="false"
+              >
+                Course management
+              </button>
+              <div class="collapse" id="collapse-4">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-4-1" class="text-body rounded"
+                      >Showing the courses</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-2" class="text-body rounded"
+                      >Adding a course</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-3" class="text-body rounded"
+                      >Receiving a course in-submission</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-4" class="text-body rounded"
+                      >Curating a course</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-5" class="text-body rounded"
+                      >Putting a price on the course</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-5"
+                aria-expanded="false"
+              >
+                Flash Sale and Transaction Management
+              </button>
+              <div class="collapse" id="collapse-5">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-5-1" class="text-body rounded"
+                      >Receiving a flash sale acknowledgment for participating
+                      in the flash sale.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#section-5-2" class="text-body rounded"
+                      >Showing Transactions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-5-3" class="text-body rounded"
+                      >Income Report</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-6"
+                aria-expanded="false"
+              >
+                Other QoL and Settings
+              </button>
+              <div class="collapse" id="collapse-6">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-6-1" class="text-body rounded"
+                      >Essence of Notifications
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#section-6-2" class="text-body rounded"
+                      >Visit the profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-6-3" class="text-body rounded"
+                      >Show the setting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top text-center mt-auto p-3">
+        <a href="../../guide.html" class="btn-2 btn btn-primary btn-sm"
+          >Go Back to Guide List</a
+        >
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Banner Start -->
+    <div
+      class="container-fluid bg-custom py-5 mb-5 border-bottom border-danger border-1 shadow"
+    >
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <img
+            src="img/logo.png"
+            alt="ICEI Logo"
+            class="icon-image img-fluid"
+          />
+          <h1 class="fw-bold text-danger mb-3 my-4">Mitra User Guide</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <div class="container py-5">
+      <h1 class="fw-bolder display-6">Welcome to the User Guide!</h1>
+      <p style="text-align: justify">
+        Welcome to our University Administration Guide! This comprehensive
+        resource has been meticulously designed to support both lecturers and
+        students in effectively managing their academic endeavors within our
+        institution. From handling course materials to facilitating student
+        engagement, we are dedicated to furnishing you with clear instructions
+        and helpful insights.
+      </p>
+
+      <!-- Section 1 Start -->
+      <h1 class="fw-bold display-7 mt-5">
+        Registration as Mitra and Dashboard
+      </h1>
+      <h3 id="section-1-1" class="fw-bold mt-2">Registration as student</h3>
+      <p class="mt-2" style="text-align: justify">
+        To register, click the register button at the top right and input the
+        credentials needed such as email, username, full name, name of the
+        university enrolled, and other information. After done with the
+        credentials required, click the create account button and an email
+        verification will be sent to that email. Once activated and verified,
+        the page will be directed to dashboard page.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/1. Registration as student.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Registering as a Student.</p>
+
+      <h3 id="section-1-2" class="fw-bold mt-5">Email Confirmation</h3>
+      <p class="mt-2" style="text-align: justify">
+        After activated and verified, an email will be sent by notifying you are
+        registered.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/2. Email Confirmation as mitra.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Email Confirmation Process.</p>
+
+      <h3 id="section-1-3" class="fw-bold mt-2">
+        Entering the portal as mitra
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Login by inputting the right credentials to be directed to the dashboard
+        page.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/3. Entering the portal as mitra.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Accessing the Portal as a Mitra.</p>
+
+      <h3 id="section-1-4" class="fw-bold mt-2">Going to the Dashboard</h3>
+      <p class="mt-2" style="text-align: justify">
+        The dashboard contains the current balance of the mitra and contains the
+        transactions, on-going transaction, succesful transaction, data graph
+        for access and completed transaction, and the current number of
+        lecturers and courses.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/4. going to the dashboard.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Navigating to the Dashboard.</p>
+    </div>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 Start -->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Learner Management</h1>
+
+      <h3 id="section-2-1" class="fw-bold mt-2">Showing the learners - 1</h3>
+      <p class="mt-2" style="text-align: justify">
+        Under the learners tab on the left side of the page click the outbound
+        part of the learners tab to access the page. Outbound learners have the
+        following: the total learners, in progress learners, passed, learners,
+        and failed learners. It also has the pie graph and data table for the
+        number of learners. This can be filtered through setting time range for
+        when the user has registered as a learner. The data table can be sorted
+        and filtered as well as can be downloaded as a XLS or CSV file if the
+        user wishes.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/5.1 showing the learners.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Displaying Learner Information - Part 1.</p>
+
+      <h3 id="section-2-2" class="fw-bold mt-5">Showing the learners - 2</h3>
+      <p class="mt-2" style="text-align: justify">
+        To check the details of the learners, click on the details. For this
+        example the in progress details will be used to view the data. It will
+        show the data graph of the in progress learners with the data table that
+        can be sorted by gender and filtered by the university. The data table
+        can also be downloaded into a CSV or XLS file. Viewing Passed learners
+        details allows the user to see the participants who have passed a
+        specific course and can be viewed via graph or data table. The data
+        table can be also sorted, filtered, and can be downloaded as XLS or CSV
+        file. Viewing Failed learners details allows the user to see the
+        participants who have failed a specific course and can be viewed via
+        graph or data table. The data table can be also sorted, filtered, and
+        can be downloaded as XLS or CSV file .
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/5.2 showing the learners.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Displaying Learner Information - Part 2.</p>
+    </div>
+    <!-- Section 2 End -->
+
+    <!-- Section 3 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Lecturer Management</h1>
+
+      <h3 id="section-3-1" class="fw-bold mt-2">Showing the lecturers</h3>
+      <p class="mt-2" style="text-align: justify">
+        Click on the lecturers tab to view the lecturers page. It displays the
+        Active lecturers, data count, graph, and the data table of the
+        lecturers. This can also filter time range, sort the status, filter
+        status whether it is pending active or deactivated, as well as can
+        download the data table as XLS or CSV file. The lecturers detail can
+        also be viewed to see the lecturers full details. This can also be seen
+        to the lecturers profile that can view all the faculty lecturers
+        registered to the portal.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/6. showing the lecturers.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Showcasing Lecturer Profiles.</p>
+
+      <h3 id="section-3-2" class="fw-bold mt-5">
+        Updating a lecturers details
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        To update a lecturers profile, click the details of a lecturer and the
+        user can edit the details of the lecturer as well as download the data
+        table of the lecturer as XLS or CSV.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/7. Updating a lecturers details.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-2 text-center">Updating Lecturer Details.</p>
+
+      <h3 id="section-3-3" class="fw-bold mt-5">
+        Active or Inactive Lecturer Update
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the lecturer details and use the toggle button to activate the
+        lecturers status. you can also see the activities of the lecturer by
+        clicking the see activities of the lecturer to know if they login or
+        logout of the portal. The data table can also be downloaded as XLS or
+        CSV file.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/8. active or inactive lecturer update.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Activating or Deactivating Lecturer Status.
+      </p>
+    </div>
+    <!-- Section 3 End-->
+
+    <!-- Section 4 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Course management</h1>
+
+      <h3 id="section-4-1" class="fw-bold mt-2">Showing the courses</h3>
+      <p class="mt-2" style="text-align: justify">
+        By going to the courses tab, the user can filter the date on where the
+        total courses was added by clicking the drop down button. It can also
+        set the time range for filtering. the courses tab displays the
+        demographic for the courses and the data table that displays the courses
+        that the lecturer uses. This can be downloaded as XLS or CSV file. By
+        clicking the details of the course whether it is active, archived,
+        drafted or total, the demographic and data table of each course details
+        will be shown on a different page. The data table can be downloaded as
+        an XLS or CSV file.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/9. showing the courses.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Displaying Available Courses.</p>
+
+      <h3 id="section-4-2" class="fw-bold mt-5">Adding a course</h3>
+      <p class="mt-2" style="text-align: justify">
+        To add a course, click the "add course" button above the date filter
+        dropdown. here you can input the credentials of the course such as the
+        name of the course, the course code, the institution of the course,
+        category, course type, course run, level, the language of the course,
+        its description, highlights, and where the visitors will be attracted.
+        The course can also be assigned to a lecturer by inputting the name of
+        the lecturer and clicking the save button once done.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/10. adding a course.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Adding a New Course.</p>
+
+      <h3 id="section-4-3" class="fw-bold mt-5">
+        Receiving a course in-submission
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the courses for submission details. here you can see the
+        demographic and data table of the course that can be curated.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/11. receiving a course in-submission.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Receiving Course Submissions.</p>
+
+      <h3 id="section-4-4" class="fw-bold mt-5">Curating a course</h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the curation button on one of the courses and the user can decide
+        if the course is accepted and declined with an optional extra note to be
+        filled. Once done, click update.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/12. curating a course.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Curating Course Content.</p>
+
+      <h3 id="section-4-5" class="fw-bold mt-5">
+        Putting a price on the course
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        In advanced settings tab, scroll down to see the cosmetic course display
+        price section to change the price of a course then click save changes
+        once done.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/13. putting a price on the course.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Setting Course Prices.</p>
+    </div>
+    <!-- Section 4 End-->
+
+    <!-- Section 5 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">
+        Flash sale and Transaction Management
+      </h1>
+
+      <h3 id="section-5-1" class="fw-bold mt-2">
+        Receiving a flash sale acknowledgment for participating in the flash
+        sale.
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        In the flash sale tab, click the add flash sale and select one of the
+        courses that is selected to be on sale, set the percentage and the
+        period of the flash sale on the course with the inputted then submit to
+        save and make the course on sale. you can see the flash sale is set once
+        you see the course was added but it is inactive with the time range of
+        the flash sale displayed.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/14. Receiving a flash sale acknowledging participation in flash sale.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Acknowledging a Flash Sale.</p>
+
+      <h3 id="section-5-2" class="fw-bold mt-5">Showing Transactions</h3>
+      <p class="mt-2" style="text-align: justify">
+        On the transaction details tab displays the total transaction amount,
+        the total transactions, and the data table for the transactions history
+        with the filter drop down button for the time range. This can be
+        displayed through excel format or the print button format that displays
+        as a printable format. This can also be sorted through lecturer name,
+        course name or payment method. The completed transactions tab has the
+        data table with the filter drop down button for the time range and can
+        be displayed through excel format or the print button format that
+        displays as a printable format. This can be sorted through course name
+        and transaction code as well as each transaction can view the full
+        details of the transaction history.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/15. showing transactions.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Viewing Transaction History.</p>
+
+      <h3 id="section-5-3" class="fw-bold mt-5">Income Report</h3>
+      <p class="mt-2" style="text-align: justify">
+        The income report tab displays the total transactions amount and the
+        data table in the excel format that can be switched to the printable
+        format of the income reports. The fund request and the fund withdrawal
+        or disbursement history can also be viewed here as well as it can be
+        switched to their printable format of the table.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/16. Income Report.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Generating Income Reports.</p>
+    </div>
+    <!-- Section 5 End-->
+
+    <!-- Section 6 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Other QoL and Settings</h1>
+
+      <h3 id="section-6-1" class="fw-bold mt-2">Essence of Notifications</h3>
+      <p class="mt-2" style="text-align: justify">
+        The notifications can be seen as the bell icon through the top right
+        side of the side besides the profile button.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/17. Essence of notificatons.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Managing Notifications Preferences.</p>
+
+      <h3 id="section-6-2" class="fw-bold mt-5">Visit the profile</h3>
+      <p class="mt-2" style="text-align: justify">
+        To visit the profile click the profile button under the kebab menu to
+        see the profile of the account.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/18. visit the profile.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Accessing User Profile.</p>
+
+      <h3 id="section-6-3" class="fw-bold mt-5">Show the setting</h3>
+      <p class="mt-2" style="text-align: justify">
+        To show the account settings, click the settings button under the kebab
+        menu. the information of the account can be changed through here.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../Mitra Guide/vids/19. show the setting.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Exploring Settings Options.</p>
+    </div>
+    <!-- Section 6 End-->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/highlight/highlight.min.js"></script>
+
+    <!--Main Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+File Structuring of the User Guide Folders:
+
+ICEI Landing Page
+|
+|
+|_______guide.html
+|
+|
+|_______pages
+	|
+	|
+	|____Student Guide
+	|		|
+	|		|
+	|		|____index.html
+	|		|
+	|		|
+	|____Lecturer Guide
+	|		|
+	|		|
+	|		|____index.html
+	|		|
+	|		|
+	|____Mitra Guide
+	|		|
+	|		|
+	|		|____index.html
+	|		|
+	|		|
+	|____ICEI Guide
+			|
+			|
+			|____index.html
+			|
+			|

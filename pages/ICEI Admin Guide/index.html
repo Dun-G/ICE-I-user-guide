@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ICE-I Admin User Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/highlight/default.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="loader-container">
+      <img src="img/logo2.png" alt="Image" id="loader-image" />
+    </div>
+
+    <!-- Sidebar Start -->
+    <button
+      class="btn btn-lg btn-primary btn-offcanvas"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasSidebar"
+      aria-controls="offcanvasSidebar"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasSidebar"
+      aria-labelledby="offcanvasSidebarLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <img
+          src="img/logo.png"
+          alt="Sidebar Logo"
+          class="sidebar-image img-fluid"
+        />
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="flex-shrink-0 bg-white">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-1"
+              >
+                Account Management
+              </button>
+              <div class="collapse" id="collapse-1">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-1-1" class="text-body rounded"
+                      >Entering the portal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-2" class="text-body rounded"
+                      >Visit Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-3" class="text-body rounded"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-4" class="text-body rounded"
+                      >Notification Purposes</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-1-5" class="text-body rounded"
+                      >Logging Out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-2"
+                aria-expanded="false"
+              >
+                Dashboard
+              </button>
+              <div class="collapse" id="collapse-2">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-2-1" class="text-body rounded"
+                      >Going to the dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-2-2" class="text-body rounded"
+                      >Showing the sections of dashboard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-3"
+                aria-expanded="false"
+              >
+                Partners Management
+              </button>
+              <div class="collapse" id="collapse-3">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-3-1" class="text-body rounded"
+                      >Showing how to update a partners details</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-4"
+                aria-expanded="false"
+              >
+                Course Management
+              </button>
+              <div class="collapse" id="collapse-4">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-4-1" class="text-body rounded"
+                      >Showing Courses Section</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-4-2" class="text-body rounded"
+                      >Curating a Course</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-5"
+                aria-expanded="false"
+              >
+                Transaction Management
+              </button>
+              <div class="collapse" id="collapse-5">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-5-1" class="text-body rounded"
+                      >Transaction View
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#section-5-2" class="text-body rounded"
+                      >Transaction of Partners</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-6"
+                aria-expanded="false"
+              >
+                Learners and Lecturer Section
+              </button>
+              <div class="collapse" id="collapse-6">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-6-1" class="text-body rounded"
+                      >Showing Learners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#section-6-2" class="text-body rounded"
+                      >Showing Lecturers</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-7"
+                aria-expanded="false"
+              >
+                Voucher Management
+              </button>
+              <div class="collapse" id="collapse-7">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-7-1" class="text-body rounded"
+                      >Vouchers and Flash Sale
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#section-7-2" class="text-body rounded"
+                      >Voucher Creation for Public</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-7-3" class="text-body rounded"
+                      >Voucher Creation for Special Occasion</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="mb-1">
+              <button
+                class="btn btn-toggle align-items-center text-start rounded collapsed fw-bold"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-8"
+                aria-expanded="false"
+              >
+                Learners and Lecturer Section
+              </button>
+              <div class="collapse" id="collapse-8">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#section-8-1" class="text-body rounded"
+                      >Showing Content
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top text-center mt-auto p-3">
+        <a href="../../guide.html" class="btn-2 btn btn-primary btn-sm"
+          >Go Back to Guide List</a
+        >
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Banner Start -->
+    <div
+      class="container-fluid bg-custom py-5 mb-5 border-bottom border-danger border-1 shadow"
+    >
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <img
+            src="img/logo.png"
+            alt="ICEI Logo"
+            class="icon-image img-fluid"
+          />
+          <h1 class="fw-bold text-danger mb-3 my-4">ICE-I Admin User Guide</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <div class="container py-5">
+      <h1 class="fw-bolder display-6">Welcome to the User Guide!</h1>
+      <p style="text-align: justify">
+        Welcome to the ICE-I User Guide! This extensive resource has been
+        thoughtfully crafted to empower the main administrator with full control
+        over the website functionalities, as well as overseeing the management
+        of university affairs, students, and lecturers. From overseeing course
+        materials to ensuring seamless interaction among students and lecturers,
+        we are committed to providing you with precise guidance and valuable
+        insights to efficiently manage all aspects of the website.
+      </p>
+
+      <!-- Section 1 Start -->
+      <h1 class="fw-bold display-7 mt-5">Account Management</h1>
+      <h3 id="section-1-1" class="fw-bold mt-2">Entering the portal</h3>
+      <p class="mt-2" style="text-align: justify">
+        To login the admin credentials, you must first go to the login page of
+        the ICEI website and input the admin credentials such as the
+        corresponding email and the password to enter to the admin website.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Entering the portal.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Navigating to the user portal for account management.
+      </p>
+
+      <h3 id="section-1-2" class="fw-bold mt-5">Visit Profile</h3>
+      <p class="mt-2" style="text-align: justify">
+        To visit the profile, go to the kebab menu on the right side of the site
+        and click "Profile".
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Visit the profile.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Exploring and updating user profile information.
+      </p>
+
+      <h3 id="section-1-3" class="fw-bold mt-2">Settings</h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the kebab menu or the three dot menu on the upper right side of
+        the site and click the settings text. Under the settings, account and
+        user information can be changed by inputting the credentials that can be
+        changed or added. There is also an option to permanently delete the
+        account with just one press of the button.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/showing the settings.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Adjusting the settings.</p>
+
+      <h3 id="section-1-4" class="fw-bold mt-2">Notification Purposes</h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the bell icon on the upper right side of the screen to show the
+        notifications. This can be show the transactions and the course
+        notifications. You can select to view all notification by clicking th
+        view all notifications and it will show you all the notifications of the
+        site including the transaction and course notification.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Notification Purposes.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Managing notification preferences.</p>
+
+      <h3 id="section-1-5" class="fw-bold mt-2">Logging out</h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the 3 dot menu on the upper right side of the site and click the
+        logout button.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Logging out.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Properly logging out of the account.</p>
+    </div>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 Start -->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Dashboard</h1>
+
+      <h3 id="section-2-1" class="fw-bold mt-2">Going to the dashboard</h3>
+      <p class="mt-2" style="text-align: justify">
+        After entering the admin site, the total learners, partners, courses,
+        and lectures will be shown. The transaction chart as well as filters to
+        the partners and a specific time range dropdowns are shown and can be
+        toggled. the Learners chart is also present with the dropdown for time
+        range is shown. Most enrolled and popular courses are also shown here
+        with the dropdown button for time range. Countries map and details such
+        as learner data, course data and device used are shown with the top
+        rankings for lecturers, partners and course categories.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Going to the dashboard.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Accessing the main dashboard interface.</p>
+
+      <h3 id="section-2-2" class="fw-bold mt-5">
+        Showing the sections of dashboard
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        The sections of the dashboard contain the transaction chart, the time
+        range dropdown button for filtering the time for daily recorded
+        transaction, weekly recorded transaction, monthly recorded transaction,
+        and yearly recorded transaction. The learners chart also displays the
+        statistics of the learner of the course and can be filtered through time
+        as well. The most enrolled and popular courses can be seen as a section
+        of the dash board as well.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Showing the sections of dashboard.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Highlighting different sections and functionalities of the dashboard.
+      </p>
+    </div>
+    <!-- Section 2 End -->
+
+    <!-- Section 3 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Partners Management</h1>
+
+      <h3 id="section-3-1" class="fw-bold mt-2">
+        Showing how to update a partners details
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Go to partners section and click on partners list tab. in this section
+        you can download the reports of the partners to either XLS or CSV file
+        as well as the details and list of partners with the filter drop down to
+        limit entries and a search bar. In the add partners section displays
+        data under the the summary tab the following details: the analysis of
+        the course, learner, and lecturer by showing a pie graph indicating the
+        data represented. The profile tab displays the inputs for adding a
+        partner by typing the institution credentials, organization name,
+        account number and more.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Showing how to update a partners details.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Demonstrating the process of updating partne's information.
+      </p>
+    </div>
+    <!-- Section 3 End-->
+
+    <!-- Section 4 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Course Management</h1>
+
+      <h3 id="section-4-1" class="fw-bold mt-2">Showing Courses Section</h3>
+      <p class="mt-2" style="text-align: justify">
+        Under the courses tab, the user can see the data for the number of the
+        courses published, archived, and more with addition to course analysis
+        such as the course chart for different institutions and filtering the
+        time by selecting a date range. Under the course analaysis, the publised
+        courses, the archived courses, and the waiting for approval courses are
+        displayed these can be downloaded into a XLS and CSV and can filter type
+        of courses, institutions and ratings.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/showing courses section.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Navigating to the courses section for management.
+      </p>
+
+      <h3 id="section-4-2" class="fw-bold mt-5">Curating a Course</h3>
+      <p class="mt-2" style="text-align: justify">
+        To curate a course, click the curation button under the curation remark
+        tabs, put necessary details and press update when it is done, a website
+        sign will pop up and says "Course accepted successfully". The specific
+        course curated will be added to the published courses tab.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Curating a course.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Steps to create and manage course content and details.
+      </p>
+    </div>
+    <!-- Section 4 End-->
+
+    <!-- Section 5 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Transaction Management</h1>
+
+      <h3 id="section-5-1" class="fw-bold mt-2">Transaction View</h3>
+      <p class="mt-2" style="text-align: justify">
+        The transaction view can be seen throughout the transactions tab and can
+        be used to view the transaction charts and profit data of all the
+        partners and specific institutional partners. This section can also
+        display the partners disbursement report that can eb downloaded as XLS
+        or CSV file with the drop down filters of the table which includes
+        status, method, course institution, and date filter. The partners
+        Disbursement report can be seen in this tab.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Transaction View.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">Viewing and managing transaction records.</p>
+
+      <h3 id="section-5-2" class="fw-bold mt-5">Transaction of Partners</h3>
+      <p class="mt-2" style="text-align: justify">
+        The transaction of partners can be seen throughout the transactions tab
+        and it displays the data for no. of transactions and the transaction
+        charts as well as the data table for the total partners transaction. The
+        data table can be downloaded as CSV or XLS file.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Transaction of Partners.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Demonstrating partner transactions and processing.
+      </p>
+    </div>
+    <!-- Section 5 End-->
+
+    <!-- Section 6 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Learners and Lecturer Section</h1>
+
+      <h3 id="section-6-1" class="fw-bold mt-2">Showing Learners</h3>
+      <p class="mt-2" style="text-align: justify">
+        The learners tab displays the demographic for the total learners and the
+        learners chart and can select a date range for when the learner has been
+        registered. Below the demographic data for the learners are the data
+        table for the total learners which the data can be downloaded to XLS and
+        CSV. The learner details on the data table can filter genders,
+        countries, institutions, and the time registered that the data table can
+        display. The time range can be displayed through days, month, years, and
+        even a specific date. To check the details of the student, click on the
+        details link on the right side of the data table to view the student's
+        full details. It displays the full details of the student as well as the
+        downloaded file to CSV and XLS.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Showing Learners.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Accessing and managing learner profiles and data.
+      </p>
+
+      <h3 id="section-6-2" class="fw-bold mt-5">Showing Lecturers</h3>
+      <p class="mt-2" style="text-align: justify">
+        The lecturers tab displays the demographic for the total lecturers and
+        the lecturers chart and can select a date range for when the lecturer
+        has been registered. Below the demographic data for the lecturer are the
+        data table for the total lecturer which the data can be downloaded to
+        XLS and CSV. The lecturer details on the data table can filter genders,
+        countries, institutions, and the time registered that the data table can
+        display. The time range can be displayed through days, month, years, and
+        even a specific date. To check the details of the lecturer, click on the
+        details link on the right side of the data table to view the lecturers
+        full details. It displays the full details of the lecturer as well as
+        the downloaded file to CSV and XLS.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Showing Lecturers.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Reviewing lecturer profiles and information.
+      </p>
+    </div>
+    <!-- Section 6 End-->
+
+    <!-- Section 7 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Voucher Management</h1>
+
+      <h3 id="section-7-1" class="fw-bold mt-2">Vouchers and Flash sale</h3>
+      <p class="mt-2" style="text-align: justify">
+        Vouchers and flash sales can be accessed by vouchers and flash sales tab
+        that can display the data table for both vouchers and flash sales with
+        the corresponding filters and can be downloaded as XLS or CSV file.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Vouchers and Flash Sale.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Understanding voucher management and flash sale promotions.
+      </p>
+
+      <h3 id="section-7-2" class="fw-bold mt-5">Voucher Creation for Public</h3>
+      <p class="mt-2" style="text-align: justify">
+        Vouchers for different institutes can be created by creating a new
+        voucher under the Vouchers and Flash Sales section by setting it as
+        public and inputting the credentials such as voucher name, quota,
+        estimated expenses, voucher period, semesters and which partner
+        institution does it apply. After creating the new voucher, this can be
+        seen on the data table of the vouchers and can be searched as well that
+        can be used to the public.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Voucher creation for public.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Creating vouchers for general use by the public.
+      </p>
+
+      <h3 id="section-7-3" class="fw-bold mt-5">
+        Voucher Creation for Special Occasion
+      </h3>
+      <p class="mt-2" style="text-align: justify">
+        Special occasional vouchers can be created by setting the creation of
+        the vouchers to special instead of public and inputting the following
+        details such as voucher name, quota, estimated expenses, voucher period,
+        semesters and which partner institution does it apply. After creating
+        the new voucher, this can be seen on the data table of the vouchers and
+        can be searched as well that can be used to the public.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Voucher creation for special occasion.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Generating vouchers for special events or occasions.
+      </p>
+    </div>
+    <!-- Section 7 End-->
+
+    <!-- Section 8 Start-->
+    <div class="container py-5">
+      <h1 class="fw-bold display-7 mt-1">Content Management</h1>
+
+      <h3 id="section-8-1" class="fw-bold mt-2">Showing Content</h3>
+      <p class="mt-2" style="text-align: justify">
+        Click the Content bar to expand tabs ranging from Announcements, Slides,
+        and Articles. Under the announcement tabs, the announcement data table
+        can be downloaded to a XLS or CSV file as well as the option to add an
+        announcement. Under the slides tab, the data table can be downloaded to
+        a XLS or CSV file as well as the option to add a slide and the option to
+        post, remove, or delete an existing slide. Under the articles tab the
+        data table can be downloaded to a XLS or CSV file as well as the option
+        to add a slide and the option to post, remove, or edit an existing
+        article.
+      </p>
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="border border-5 border-danger rounded"
+                src="../ICEI Admin Guide/vids/Showing Content.mp4"
+                allowfullscreen
+                autoplay="false"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-2 text-center">
+        Exploring the content management interface and options.
+      </p>
+    </div>
+    <!-- Section 8 End-->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/highlight/highlight.min.js"></script>
+
+    <!--Main Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
